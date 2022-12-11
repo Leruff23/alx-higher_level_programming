@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-
-
-
-
-
 def search_replace(my_list, search, replace):
 
     new = my_list[:]
@@ -15,4 +10,3 @@ def search_replace(my_list, search, replace):
         new[j] = replace
 
     return new
-
