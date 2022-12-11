@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-
-
-
-
-
 def multiply_by_2(a_dictionary):
 
     new = a_dictionary.copy()
@@ -15,4 +10,3 @@ def multiply_by_2(a_dictionary):
         new[key[i]] = new[key[i]] * 2
 
     return new
-
