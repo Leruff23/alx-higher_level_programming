@@ -8,4 +8,4 @@ def multiple_returns(sentence):
 
     tup = length, first_char
 
-    return(tup) 
+    return(tup)
