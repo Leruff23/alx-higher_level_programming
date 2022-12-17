@@ -2,12 +2,8 @@
 
 def islower(c):
 
-        char = ord(c)
+    if ord(c) >= ord('a') and ord(c) <= ord('z'):
 
-            if char >= 97 and char <= 122:
+        return True
 
-                        return(True)
-
-                            else:
-
-                                        return(False)
+    return False
