@@ -1,31 +1,37 @@
 #!/usr/bin/python3
 
-from sys import argv
+def print_arg(argv):
 
-arlen = len(argv) - 1
+    n = len(argv) - 1
 
-arstr = ""
+    if n == 0:
 
-if arlen == 1:
+        print("{:d} argument.".format(n))
 
-        arstr = "argument"
+        return
+
+    else:
+
+        if n == 1:
+
+            print("{:d} argument:".format(n))
 
         else:
 
-                arstr = "arguments"
+            print("{:d} arguments:".format(n))
 
-                if __name__ == "__main__":
+        i = 1
 
-                        if arlen == 0:
+        while i <= n:
 
-                                    print("{:d} {:s}.".format(arlen, arstr))
+            print("{:d}: {:s}".format(i, argv[i]))
 
-                                        else:
+            i += 1
 
-                                                    print("{:d} {:s}:".format(arlen, arstr))
 
-                                                            for i, j in enumerate(argv):
 
-                                                                            if i != 0:
+if __name__ == "__main__":
 
-                                                                                                print("{:d}: {:s}".format(i, j))
+    import sys
+
+    print_arg(sys.argv)
