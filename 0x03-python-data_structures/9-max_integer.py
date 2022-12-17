@@ -6,12 +6,12 @@
 
 def max_integer(my_list=[]):
 
-        if len(my_list) == 0:
+    if len(my_list) == 0:
 
-                    return None
+        return None
 
-                        i = len(my_list) - 1
+    i = len(my_list) - 1
 
-                            my_list.sort()
+    my_list.sort()
 
-                                return my_list[i]
+    return my_list[i]
