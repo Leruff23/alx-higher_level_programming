@@ -2,12 +2,20 @@
 
 def print_last_digit(number):
 
-        if number < 0:
+    exe = 0
 
-                    number *= -1
+    if number < 0:
 
-                        number %= 10
+        number *= -1
 
-                            print(number, end="")
+    exe = 1
 
-                                return(number)
+    last = number % 10
+
+    if exe == 1:
+
+        number *= -1
+
+    print("{:d}".format(last), end="")
+
+    return last
