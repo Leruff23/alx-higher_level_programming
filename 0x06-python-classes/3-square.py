@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 
-"""Script that assigns a private instance attribute size to class
-
-    Square with size validation"""
+"""Python script that creates a class and functions for the class"""
 
 
 class Square:
 
     """Class that defines a square with a private instance attribute size"""
-
 
     def __init__(self, size=0):
 
@@ -25,3 +22,11 @@ class Square:
         else:
 
             raise TypeError('size must be an integer')
+
+
+
+    def area(self):
+
+        """Returns the area of the square"""
+
+        return int(self.__size) * int(self.__size)
