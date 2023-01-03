@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Script that assigns a private instance attribute size to class
 
     Square with size validation"""
