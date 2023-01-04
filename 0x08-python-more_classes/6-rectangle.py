@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Python script that defines a class named Rectangle and its functions."""
 
+
 class Rectangle:
     """Class that defines a rectangle with private attributes."""
     number_of_instances = 0
